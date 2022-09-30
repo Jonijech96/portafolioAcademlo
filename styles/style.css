@@ -57,6 +57,7 @@ a{
 .text-subtitle{
   font-size: 60px;
   margin: 0;
+  margin-bottom: 10px;
 }
 /* HEADER */
 .header__container{
@@ -103,10 +104,12 @@ a{
   position: sticky;
   width: 80%;
   background-color: var(--alt-color);
+  border-radius: 10px;
   margin: -30px auto 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px 50px;
+  gap: 60px;
 }
 .header__text__icons{
   display: flex;
@@ -114,8 +117,10 @@ a{
 }
 .header__icon{
 background-color: var(--secondary-color);
+border-radius: 10px;
 height: 90px;
-width: 120px;
+width: 200px;
+padding: 10px;
 }
 
 .content__icon__img{
@@ -149,17 +154,25 @@ width: 120px;
   justify-content: center;
   align-items: center;
   gap: 30px;
+  width: 80%;
+  margin: auto;
 }
 .services__articles{
   display: flex;
-  gap: 15px;
+  gap: 40px;
 }
 
 .services__card{
-  text-align: center;
-  background-color: var(--white);
+  background-image: url(../images/Ellipse\ 14.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
   width: 300px;
   height: 400px;
+}
+.card{
+  border-radius: 10px;
+  text-align: center;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,15 +187,19 @@ width: 120px;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 60%;
   margin: auto;
+  gap: 30px;
 }
-
+.skill__items{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .skill__item__text{
   display: flex;
   justify-content: space-between;
 }
-
 .skill__item__bar{
   width: 100%;
   margin: auto;
@@ -190,10 +207,58 @@ width: 120px;
   background-color: var(--secondary-color);
   border-radius: 15px;
 }
-
 .item__bar__progres{
   width: 90%;
   background-color: var(--main-color);
   height: 100%;
   border-radius: 15px;
+}
+.text__skill{
+  margin: 0;
+  font-weight: 600;
+}
+
+/* PROYECTS */
+.proyects__content{
+  width: 100%;
+  padding: 0 50px;
+  overflow: hidden;
+}
+.proyects__title{
+  margin-bottom: 20px;
+}
+.proyects__content__carrousel{
+  width: 200%;
+  display: flex;
+  gap: 20px;
+}
+.proyects__content__carrousel__img{
+  width: 500px;
+  height: 393px;
+}
+
+/* CONTACT */
+.contact__content{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  gap: 30px;
+  padding-top: 50px;
+  min-width: 650px;
+}
+.contact__cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact__card{
+  width: 300px;
+  height: 300px;
+}
+
+/* FOOTER */
+.footer{
+  text-align: center;
+  margin: 50px 0;
 }

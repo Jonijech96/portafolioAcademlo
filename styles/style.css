@@ -61,6 +61,9 @@ a{
   margin: 0;
   margin-bottom: 10px;
 }
+.button-right{
+  display: none;
+}
 @media (max-width:500px) {
   body{
     font-size: 16px;
@@ -82,6 +85,21 @@ a{
     height: 3px;
     width: 70%;
   }
+  .button-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: var(--main-color);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f5f5f5c9;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  
   
 }
 /* HEADER */
@@ -247,7 +265,6 @@ padding: 10px;
   text-align: center;
   width: 60%;
   margin: auto;
-  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,10 +322,13 @@ padding: 10px;
     gap: 30px;
     width: inherit;
     padding-left: 20px;
+    position: relative;
   }
   .services__card{
     height: 380px;
   }
+  
+  
 }
 
 /* SKILLS */
@@ -389,7 +409,11 @@ padding: 10px;
   }
   .proyects__content__carrousel{
     gap: 25px;
+    position: relative;
   }
+  .proyects__content__carrousel .button-right{
+    right: 49%;
+  } 
   .proyects__content__carrousel__img{
     width: auto;
     height: 250px;

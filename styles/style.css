@@ -8,6 +8,7 @@
 }
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -122,6 +123,9 @@ a{
 .menu__link{
   color: var(--secondary-color);
 }
+.menu__link.ligth-blue{
+  color: var(--main-color);
+}
 .menu__mobile{
   display: none;
 }
@@ -134,7 +138,7 @@ a{
     display: flex;
     justify-content: flex-end;
     height: 100%;
-    align-items: flex-end;
+    align-items: center;
     
   }
   .bars__menu__svg{
@@ -326,6 +330,7 @@ padding: 10px;
   }
   .services__card{
     height: 380px;
+    width: 280px;
   }
   
   
